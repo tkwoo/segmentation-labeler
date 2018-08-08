@@ -68,7 +68,7 @@ int main(int argc, char* argv[]){
     Size sz = imgInput.size();
     Mat imgLabel(sz.height, sz.width, CV_8UC1, Scalar(0,0,0));
     // cout << sz << imgLabel.size() << endl;
-    SImages objImages(imgInput, imgShow);
+    SImages objImages(imgInput, imgShow, imgLabel);
     string strWindowName = "TKWOO IMAGE VIEWER";
     namedWindow(strWindowName, 0);
     resizeWindow(strWindowName, 800, 800);
